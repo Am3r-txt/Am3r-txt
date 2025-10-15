@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Vértice - Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/contacto.css"> 
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="logo">
+            <h1> <img src="./img/Gemini_Generated_Image_qj5e49qj5e49qj5e.png" alt="logo"></h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.Inicio.html">Inicio</a></li>
+                <li><a href="cards.html">Artistas</a></li>
+                <li><a href="galeria.html">Colección</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact-section" class="full-screen-section">
+        <h2>Contáctanos para Adquisiciones o Visitas Privadas 📧</h2>
+        <section class="contact-form-container">
+            <form action="#" method="POST" class="contact-form">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Código País + Número (Opcional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="asunto">Motivo de Contacto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>Selecciona un motivo</option>
+                        <option value="adquisicion">Consulta de Adquisición</option>
+                        <option value="visita">Reserva de Visita Privada</option>
+                        <option value="prensa">Prensa / Colaboración</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>Medio de Contacto Preferido:</label>
+                    <div>
+                        <input type="checkbox" id="pref-email" name="preferencia[]" value="email" checked>
+                        <label for="pref-email">Email</label>
+                        <input type="checkbox" id="pref-llamada" name="preferencia[]" value="llamada">
+                        <label for="pref-llamada">Llamada</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Mensaje Detallado:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu consulta específica aquí..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">Enviar Solicitud <i class="fas fa-gem"></i></button>
+                    <button type="reset" class="reset-button">Limpiar Formulario</button>
+                </div>
+
+            </form>
+        </section>
+        <p class="descriptive-text">Nuestro equipo de curadores responderá a la brevedad.</p>
+    </main>
+
+    <footer id="secondary-footer">
+        <p>&copy; 2025 Bertas Gallery.</p>
+    </footer>
+
+</body>
+</html>
